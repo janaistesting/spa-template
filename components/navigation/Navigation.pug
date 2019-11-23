@@ -5,4 +5,4 @@ div
       b-navbar-toggle(target='nav-collapse')
       b-collapse#nav-collapse(is-nav='')
         b-navbar-nav.ml-auto(v-for="item in navItems" :key="item.title")
-          b-nav-item(href='item.url' ) {{item.title}}
+          nuxt-link(:to="item.url") {{item.title}}

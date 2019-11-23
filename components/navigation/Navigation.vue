@@ -8,14 +8,18 @@
                 navItems: [
                     {
                         title: 'Startseite',
-                        url: 'startseite'
+                        url: '/'
                     },
                     {
-                        title: 'Nav1',
-                        url: 'nav1'
+                        title: 'Terminvereinbarung',
+                        url: 'appointment'
                     },
                     {
-                        title: 'Nav2',
+                        title: 'Videos',
+                        url: 'nav2'
+                    },
+                    {
+                        title: 'Impressum',
                         url: 'nav2'
                     }
                 ]
@@ -30,16 +34,20 @@
     background-color: var(--primary-color);
   }
 
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
   .navigation #nav-collapse {
     justify-content: flex-end !important;
   }
 
   .navigation #nav-collapse ul {
-    margin: 20px 30px 20px 0 !important;
+    margin: 5px 30px 5px 0 !important;
   }
 
   /* Set color for nav anchors */
-  .navigation .nav-link {
+  .navigation a {
     color: var(--write-color) !important;
     font-weight: 600;
     font-size: 20px;

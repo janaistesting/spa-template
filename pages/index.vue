@@ -2,7 +2,7 @@
 
 <script>
 
-import Startpage from "../components/startpage/Startpage";
+import Startpage from "../components/jumbotron/Jumbotron";
 
 export default {
     components: {
