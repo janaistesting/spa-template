@@ -11,10 +11,6 @@
   color: var(--write-color);
 }
 
-.transparent {
-  background-color: rgba(15, 54, 97, 0.5) !important;
-}
-
 .h1 {
   font-size: 4rem;
 }
@@ -28,13 +24,13 @@
   background-color: var(--primary-color);
   border-radius: unset;
   border: var(--primary-color) 4px solid;
-  transition: border .5s ease-out, color .5s ease-out, background-color .5s ease-out;
+  transition: border .2s ease-out, color .5s ease-out, background-color .2s ease-out;
 }
 
 .btn-primary:hover {
   background-color: var(--secondary-color);
   border: var(--secondary-color) 4px solid;
-  transition: border .5s ease-out, color .5s ease-out, background-color .5s ease-out;
+  transition: border .2s ease-out, color .2s ease-out, background-color .2s ease-out;
 }
 
 .btn-transparent {
@@ -42,14 +38,25 @@
   border: white 4px solid;
   color: var(--write-color);
   font-weight: bold;
-  transition: border .5s ease-out, color .5s ease-out;
+  transition: border .2s ease-out, color .2s ease-out;
 }
 
 .btn-transparent:hover {
   border: var(--disable-color) 4px solid;
   color: var(--disable-color);
-  transition: border .5s ease-out, color .5s ease-out;
+  transition: border .2s ease-out, color .2s ease-out;
   text-decoration: none;
+}
+
+
+/* Nuxt Css classes */
+
+.page-enter-active, .page-leave-action {
+  transition: opacity .6s;
+}
+
+.page-enter, .page-leave-active {
+  opacity: 0;
 }
 
 

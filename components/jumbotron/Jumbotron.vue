@@ -2,6 +2,12 @@
 
 <script>
     export default {
+        props: {
+            showVideo: {
+                type: Boolean,
+                default: false
+            }
+        },
         data() {
             return {
                 title: "Dein persönlicher Finanzkompass",
@@ -24,6 +30,10 @@
     margin-top: 5px;
   }
 
+  .description {
+    margin-top: 50px;
+  }
+
   .jumbotron-h1 {
     font-size: 2.5rem;
   }
@@ -34,7 +44,6 @@
   }
 
   .jumbotron-custom {
-    background-color: red;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -44,6 +53,25 @@
 
   .jumbotron {
     height: 200px;
+  }
+
+  .video-container {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+
+  .video-color-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(102, 102, 102, 0.8);
   }
 
   @media all and (min-width: 736px) {
