@@ -5,6 +5,10 @@ div
       slot(name='video')
         video(autoplay loop muted)
           source(src='~/assets/video/jumbotronv1.mp4' type='video/mp4')
+    .image-container(v-if="showImage")
+      .image-color-overlay
+      slot(name='image')
+        img.jumbotron-image(src="~/assets/image/bg_compass.jpg")
     .jumbotron-container
       h1.jumbotron-h1 {{title}}
       p.h4 {{subtitle}}

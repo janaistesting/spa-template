@@ -6,6 +6,13 @@
             showVideo: {
                 type: Boolean,
                 default: false
+            },
+            showImage: {
+                type: Boolean,
+                default: false
+            },
+            bgImage: {
+                type: String
             }
         },
         data() {
@@ -41,6 +48,18 @@
   .jumbotron-container {
     width: 80%;
     margin: 0 auto;
+    z-index: 5;
+  }
+
+  .jumbotron-image {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
   }
 
   .jumbotron-custom {
@@ -65,7 +84,7 @@
     z-index: -2;
   }
 
-  .video-color-overlay {
+  .video-color-overlay, .image-color-overlay {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -75,7 +94,6 @@
   }
 
   @media all and (min-width: 736px) {
-
     .jumbotron-h1 {
       font-size: 4rem;
     }
