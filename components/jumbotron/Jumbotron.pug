@@ -1,7 +1,7 @@
 div
-  .jumbotron-custom
+  .jumbotron-custom(:style="{backgroundColor: bgColor, height: containerHeight}")
     .video-container(v-if="showVideo")
-      .video-color-overlay
+      .video-color-overlay(v-if="showVideoOverlay" :style="{backgroundColor: overLayColor}")
       slot(name='video')
         video(autoplay loop muted)
           source(src='~/assets/video/jumbotronv1.mp4' type='video/mp4')
@@ -10,10 +10,12 @@ div
       slot(name='image')
         img.jumbotron-image(:src="`img/${bgImage}`")
     .jumbotron-container
-      h1.jumbotron-h1 {{title}}
-      p.h4 {{subtitle}}
-      p.description
-        | Endlich eine einfache und zeitsparende Planung der Finanzen haben und damit das gute Gefühl, gegenüber den Ereignissen des Lebens finanziell gewappnet zu sein.
-      .row.action-container
-        pbtn.col-12.col-md-5(to="appointment" text="Beratungsgespräch vereinbaren")
-        pbtn.col-12.col-md-5(to="videos" text="Zu den Videos", clazz="secondary")
+      slot(name='jumbotron-content')
+        h1.jumbotron-h1 {{title}}
+        p.h4 {{subtitle}}
+        p.description
+          | Endlich eine einfache und zeitsparende Planung der Finanzen haben und damit das gute Gefühl, gegenüber den Ereignissen des Lebens finanziell gewappnet zu sein.
+        slot(name='jumbotron-action')
+          .row.action-container
+            pbtn.col-12.col-md-5(to="appointment" text="Beratungsgespräch vereinbaren")
+            pbtn.col-12.col-md-5(to="videos" text="Zu den Videos", clazz="secondary")

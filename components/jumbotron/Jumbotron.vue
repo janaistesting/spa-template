@@ -9,11 +9,24 @@
                 type: Boolean,
                 default: false
             },
+            showVideoOverlay: {
+                type: Boolean,
+                default: true
+            },
             showImage: {
                 type: Boolean,
                 default: false
             },
             bgImage: {
+                type: String
+            },
+            bgColor: {
+                type: String
+            },
+            containerHeight: {
+                type: String
+            },
+            overLayColor: {
                 type: String
             }
         },
@@ -30,6 +43,15 @@
 </script>
 
 <style scoped>
+
+  video {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .jumbotron-custom {
+    height: auto;
+  }
 
   .action-container {
     display: flex;
@@ -52,7 +74,7 @@
 
   .jumbotron-container {
     width: 90%;
-    margin: 0 auto;
+    margin: 30px auto;
     z-index: 5;
   }
 
@@ -65,6 +87,7 @@
     height: 100%;
     object-fit: cover;
     z-index: -2;
+    display: flex;
   }
 
   .jumbotron-custom {
@@ -87,6 +110,7 @@
     width: 100%;
     height: 100%;
     z-index: -2;
+    display: flex;
   }
 
   .video-color-overlay, .image-color-overlay {

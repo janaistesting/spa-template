@@ -23,6 +23,7 @@
     padding: 10px 40px;
     text-align: center;
     display: block;
+    max-width: 500px;
   }
 
   .btn-primary {

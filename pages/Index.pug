@@ -1,3 +1,13 @@
 div
-  start-page(:showImage="true", bgImage="bg_compass.jpg")
+  jumbotron(:showImage="true", bgImage="bg_compass.jpg")
   page-statement
+
+  div.position-relative
+    jumbotron(:showVideo="true" overLayColor="rgba(15, 54, 97, 0.8)" containerHeight="auto")
+      template(v-slot:jumbotron-content)
+        .custom-jumbrotron-1
+          h1 Kennen Sie das Problem, dass einem das Geld durch die Finger rinnt und es bei plötzlichen Notfällen eng wird auf dem Konto?
+          p Im deutschen Schulsystem steht viel auf dem Lehrplan. Finanzielle Bildung und Erfolgswissen i.d.R. Leider nicht. Deshalb ist das Thema Finanzen für viele Menschen häufig nur eins, nämlich ätzend.
+          p Es scheint so, als ob man eine Rechnung bezahlt und die nächste Ausgabe bereits um die Ecke schielt.
+          h2.mt-5 Jetzt gibt es den persönlichen Finanzkompass. Einmal erstellt, dauerhaft Zeit und Geld gespart.
+          pbtn.m-auto(to="appointment" text="Mehr erfahren")
