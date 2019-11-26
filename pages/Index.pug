@@ -1,9 +1,9 @@
 div
   jumbotron(:showImage="true", bgImage="bg_compass.jpg")
-  page-statement
 
+  page-statement
   div.position-relative
-    jumbotron(:showVideo="true" overLayColor="rgba(15, 54, 97, 0.8)" containerHeight="auto")
+    jumbotron(:showVideo="true" overLayColor="rgba(15, 54, 97, 0.8)" heightClass="height-modification")
       template(v-slot:jumbotron-content)
         .custom-jumbrotron-1
           h1 Kennen Sie das Problem, dass einem das Geld durch die Finger rinnt und es bei plötzlichen Notfällen eng wird auf dem Konto?
@@ -11,3 +11,57 @@ div
           p Es scheint so, als ob man eine Rechnung bezahlt und die nächste Ausgabe bereits um die Ecke schielt.
           h2.mt-5 Jetzt gibt es den persönlichen Finanzkompass. Einmal erstellt, dauerhaft Zeit und Geld gespart.
           pbtn.m-auto(to="appointment" text="Mehr erfahren")
+
+  page-statement
+  div.position-relative
+    jumbotron(:showImage="true" bgImage="plan.jpg" overLayColor="rgba(15, 54, 97, 0.8)" heightClass="height-modification")
+      template(v-slot:jumbotron-content)
+        .custom-jumbrotron-2
+          h1 „Cool, endlich hab ich einen Plan“
+          p Das Besondere am Finanzkompass ist, dass er die verschiedensten Lebenssituationen berücksichtigt, aufeinander abstimmt und am Ende übersichtlich und klar auf einer Seite DIN A4 komprimiert ist.
+          p Der Vorteil: Bei finanziellen Entscheidungen nur einen Blick auf seinen Finanzkompass werfen und sofort im Bilde sein, ob der Kurs stimmt.
+          pbtn.m-auto(to="appointment" text="Kostenloser Beratungstermin")
+
+  page-statement
+  div.position-relative
+    jumbotron(:showImage="true" bgImage="geldplanze.jpg" heightClass="height-modification")
+      template(v-slot:jumbotron-content)
+        .custom-jumbrotron-3
+          .row.justify-content-between
+            .col-12.col-lg-3.stepper-container
+              .stepper Schritt 1
+              span Wir schauen uns gemeinsam an, welche Ziele und Wünsche duerreichen willst und wie deine aktuelle, finanzielle Situation ist.
+            .col-12.col-lg-3.stepper-container
+              .stepper Schritt 2
+              span Wir recherchieren und prüfen unternehmensunabhängig undbranchenübergreifend aus mehr als 300 ausgewähltenUnternehmen.
+            .col-12.col-lg-3.stepper-container
+              .stepper Schritt 3
+              span Du erhälst einen konkreten Plan, wie du Schritt für Schritt deine Ziele und Wünsche erreichen und mögliche Hindernisse umgehenkannst.
+          h2.mt-5 Auch danach sind wir weiterhin begleitend für dich da
+          pbtn.m-auto(to="appointment" text="Kostenlosen Termin buchen")
+
+  page-statement
+  div.position-relative
+    jumbotron(:showImage="true" bgImage="segelboot.jpg" heightClass="height-modification")
+      template(v-slot:jumbotron-content)
+        .custom-jumbrotron-4
+          h1 Wenn du alles lässt wie bisher und nichts änderst, rinnt dir weiterhin das Geld durch die Finger.
+          p Die fehlende Finanzplanung nötigt dir in der Konsequenz Entscheidungen ab, deren Folge du lieber nicht gehabt hättest. Der Zufall trifft dich mit voller Wucht – und zwar dann, wenn es gerade eh nicht passt.
+          h2.mt-5 Motto der Segler:
+          p „Nicht der Wind bestimmt wohin ich segle, sondern wie ich die Segel setze.“
+          p Nimm deine Zukunft in deine Hände!
+          p Du bestimmst, wohin die Reise geht.
+          pbtn.mt-5.mr-auto.ml-auto(to="appointment" text="Meinen Finanzkompass erstellen")
+
+  page-statement
+  div.position-relative
+    jumbotron(:showImage="true" bgImage="segelboot.jpg" heightClass="height-modification")
+      template(v-slot:jumbotron-content)
+        .custom-jumbrotron-5
+          img.custom-jumbrotron-5-img(src="img/axel-beta.jpg")
+          h1 Axel Beta
+          p
+          | Auch ich hatte keine finanzielle Bildung in der Schule, habe mir durch diverse Nebenjobs Geld hinzuverdient und musste zeitweise mit sehr wenig Geld auskommen. Frustriert davon entschied ich mich, diesen Zustand zu ändern und mir das fehlende Finanzwissen anzueignen. Heute lebe ich seit 23 Jahren nach einem Finanzkompass.
+          | Plötzliche  Autoreparaturen oder andere Notfälle werfen mich nicht aus der Bahn. Ich kann entspannt Urlaub machen, meine Freizeit aktiv gestalten und auch große Projekte umsetzen.
+
+          pbtn.mt-5.mr-auto.ml-auto(to="appointment" text="Meinen Finanzkompass erstellen")

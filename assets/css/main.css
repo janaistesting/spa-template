@@ -15,6 +15,16 @@
   font-size: 4rem;
 }
 
+.height-modification {
+  height: auto !important;
+}
+
+@media all and (min-width: 768px) {
+  .height-modification {
+    height: 100vh !important;
+  }
+}
+
 /* Nuxt Css classes */
 
 .page-enter-active, .page-leave-action {

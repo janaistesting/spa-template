@@ -23,7 +23,7 @@
             bgColor: {
                 type: String
             },
-            containerHeight: {
+            heightClass: {
                 type: String
             },
             overLayColor: {
@@ -55,12 +55,10 @@
 
   .action-container {
     display: flex;
-    justify-content: space-between;
-    margin: 50px 0 0 0;
+    justify-content: center;
   }
 
   .action-container a {
-    display: block;
     margin-top: 5px;
   }
 
@@ -131,6 +129,10 @@
       width: 80%;
       margin: 0 auto;
       z-index: 5;
+    }
+
+    .action-container {
+      justify-content: space-around;
     }
   }
 </style>

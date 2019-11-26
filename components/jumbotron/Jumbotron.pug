@@ -1,5 +1,5 @@
 div
-  .jumbotron-custom(:style="{backgroundColor: bgColor, height: containerHeight}")
+  .jumbotron-custom(:style="{backgroundColor: bgColor}" :class="heightClass")
     .video-container(v-if="showVideo")
       .video-color-overlay(v-if="showVideoOverlay" :style="{backgroundColor: overLayColor}")
       slot(name='video')
@@ -17,5 +17,5 @@ div
           | Endlich eine einfache und zeitsparende Planung der Finanzen haben und damit das gute Gefühl, gegenüber den Ereignissen des Lebens finanziell gewappnet zu sein.
         slot(name='jumbotron-action')
           .row.action-container
-            pbtn.col-12.col-md-5(to="appointment" text="Beratungsgespräch vereinbaren")
-            pbtn.col-12.col-md-5(to="videos" text="Zu den Videos", clazz="secondary")
+            pbtn.col-12.col-md-5.mt-5(to="appointment" text="Beratungsgespräch vereinbaren")
+            pbtn.col-12.col-md-5.mt-5(to="videos" text="Zu den Videos", clazz="secondary")

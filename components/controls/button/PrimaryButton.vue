@@ -19,11 +19,13 @@
 </script>
 
 <style scoped>
-  .btn-primary, .btn-transparent{
+  .btn-primary, .btn-transparent {
     padding: 10px 40px;
     text-align: center;
-    display: block;
+    display: flex;
     max-width: 500px;
+    justify-content: center;
+    align-items: center;
   }
 
   .btn-primary {

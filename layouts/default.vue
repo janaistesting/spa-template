@@ -1,32 +1,33 @@
 <template>
   <div>
-    <navigation>
-
-    </navigation>
-    <nuxt />
+    <navigation></navigation>
+    <nuxt/>
+    <footer></footer>
   </div>
 </template>
 
 <script>
-  import Navigation from "../components/navigation/Navigation";
+    import Navigation from "../components/navigation/Navigation";
+    import Footer from "../components/footer/Footer";
 
-  export default {
-    components: {
-      Navigation
+    export default {
+        components: {
+            Navigation,
+            Footer
+        }
     }
-  }
 </script>
 
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  html {
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+    font-size: 16px;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
 </style>
