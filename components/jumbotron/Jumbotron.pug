@@ -8,12 +8,12 @@ div
     .image-container(v-if="showImage")
       .image-color-overlay
       slot(name='image')
-        img.jumbotron-image(src="~/assets/image/bg_compass.jpg")
+        img.jumbotron-image(:src="`img/${bgImage}`")
     .jumbotron-container
       h1.jumbotron-h1 {{title}}
       p.h4 {{subtitle}}
       p.description
         | Endlich eine einfache und zeitsparende Planung der Finanzen haben und damit das gute Gefühl, gegenüber den Ereignissen des Lebens finanziell gewappnet zu sein.
       .row.action-container
-        nuxt-link.col-12.col-md-5.btn-primary(to="appointment") Beratungsgespräch vereinbaren
-        nuxt-link.col-12.col-md-5.btn-transparent(to="videos") Zu den Videos
+        pbtn.col-12.col-md-5(to="appointment" text="Beratungsgespräch vereinbaren")
+        pbtn.col-12.col-md-5(to="videos" text="Zu den Videos", clazz="secondary")

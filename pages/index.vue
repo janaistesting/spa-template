@@ -2,7 +2,7 @@
 
 <script>
     import Jumbotron from "../components/jumbotron/Jumbotron.vue";
-    import ParallaxPage from "../components/parallax/Parallax.vue";
+    import PageStatement from "../components/page/Page.vue";
 
     export default {
         data() {
@@ -10,7 +10,7 @@
         },
         components: {
             StartPage: Jumbotron,
-            SecondPage: ParallaxPage
+            PageStatement
         }
     }
 </script>

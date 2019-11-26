@@ -33,6 +33,8 @@
   .navigation {
     width: 100%;
     margin-top: 20px;
+    position: absolute;
+    z-index: 2;
   }
 
   .navbar {
@@ -65,6 +67,11 @@
 
   .navbar-nav {
     position: relative;
+    margin-top: 10px !important;
+  }
+
+  .nav-item {
+    font-size: 16px !important;
   }
 
   #nav-collapse a:hover {
@@ -85,6 +92,16 @@
     animation-duration: 4s;
   }
 
+  .navigation nav {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .navbar-toggler {
+    color: white !important;
+    border: 2px solid;
+  }
+
   @keyframes example {
     0%   {top: 30px;}
     20%  {top: 20px;}
@@ -94,6 +111,14 @@
   }
 
   @media all and (min-width: 768px) {
+    .nav-item {
+      font-size: 14px !important;
+    }
+
+    .navbar-nav {
+      margin-top: 0 !important;
+    }
+
     .navigation nav {
       width: 80%;
       margin: 0 auto;

@@ -8,58 +8,39 @@
 
 <style scoped>
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   .parrallax-container {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 2px;
-  }
-
-  .section {
-    /* Needed for children to be absolutely positioned relative to the parent. */
     position: relative;
-    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-    height: 100vh;
-
-    /* For text formatting. */
+    width: 100%;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 8px;
+    perspective-origin: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 0 0 5px #000;
   }
 
-  .parallax::after {
-    /* Display and position the pseudo-element */
-    content: " ";
+  .background {
     position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
-
-    /* Move the pseudo-element back away from the camera,
-     * then scale it back up to fill the viewport.
-     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-    transform: translateZ(-1px) scale(1.5);
-    /* Force the background image to fill the whole element. */
-    background-size: 100%;
-    /* Keep the image from overlapping sibling elements. */
-    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0px);
   }
 
-  /* The styling for the static div. */
-  .static {
-    background: red;
+  .foreground {
+    margin-top: auto;
+    margin-bottom: 50px;
+    transform-origin: 0;
+    transform: translateZ(3px);
   }
 
-  /* Sets the actual background images to adorable kitties. This part is crucial. */
-  .bg1::after {
-    background-image: url('https://placekitten.com/g/900/700');
-  }
-
-  .bg2::after {
-    background-image: url('https://placekitten.com/g/800/600');
+  .foreground h1 {
+    font-size: 36px;
   }
 
 </style>

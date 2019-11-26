@@ -1,7 +1,7 @@
 div
-  .navigation.fixed-top.transparent
-    b-navbar(toggleable='md' variant='info')
-      b-navbar-brand(href='#') NavBar
+  .navigation.transparent
+    b-navbar(toggleable='md' variant='info' type="dark")
+      b-navbar-brand(href='#') Finanzen einfach
       b-navbar-toggle(target='nav-collapse')
       b-collapse#nav-collapse(is-nav='')
         b-navbar-nav(v-for="item in navItems" :key="item.title")

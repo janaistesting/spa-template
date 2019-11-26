@@ -1,6 +1,8 @@
 <template src="./Jumbotron.pug" lang="pug"></template>
 
 <script>
+    import PrimaryButton from "../controls/button/PrimaryButton.vue";
+
     export default {
         props: {
             showVideo: {
@@ -20,6 +22,9 @@
                 title: "Dein persönlicher Finanzkompass",
                 subtitle: "Einfach. Zeitsparend."
             };
+        },
+        components: {
+            pbtn: PrimaryButton
         }
     }
 </script>
@@ -46,7 +51,7 @@
   }
 
   .jumbotron-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     z-index: 5;
   }
@@ -64,7 +69,7 @@
 
   .jumbotron-custom {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -96,6 +101,12 @@
   @media all and (min-width: 736px) {
     .jumbotron-h1 {
       font-size: 4rem;
+    }
+
+    .jumbotron-container {
+      width: 80%;
+      margin: 0 auto;
+      z-index: 5;
     }
   }
 </style>
