@@ -24,6 +24,10 @@
     height: auto !important;
   }
 
+  .custom-jumbrotron-0 .jumbotron-container {
+    margin-top: 200px;
+  }
+
   .custom-jumbrotron-1 h1, .custom-jumbrotron-1 p, .custom-jumbrotron-1 h2, .custom-jumbrotron-2 h1, .custom-jumbrotron-2 p, .custom-jumbrotron-2 h2 {
     color: var(--write-color);
     margin: 50px 0;
@@ -34,7 +38,7 @@
     margin-top: 150px !important;
   }
 
-  .custom-jumbrotron-3 *, .custom-jumbrotron-2, .custom-jumbrotron-4 {
+  .custom-jumbrotron-3 *, .custom-jumbrotron-2, .custom-jumbrotron-4, .custom-jumbrotron-5 {
     text-align: center;
   }
 
@@ -43,6 +47,8 @@
     margin: 0 auto;
     border-radius: 500px;
     max-width: 400px;
+    width: 100%;
+    height: auto;
   }
 
   .stepper-container {
@@ -58,8 +64,8 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(15, 54, 97, 0.8);
-    height: 170px;
-    width: 170px;
+    height: 150px;
+    width: 150px;
     border-radius: 100px;
     margin: 15px auto;
   }

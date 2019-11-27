@@ -1,4 +1,4 @@
-<template src="./Impress.pug" lang="pug"></template>
+<template src="./Index.pug" lang="pug"></template>
 
 <script>
     export default {

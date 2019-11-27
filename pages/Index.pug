@@ -1,5 +1,5 @@
 div
-  jumbotron(:showImage="true", bgImage="bg_compass.jpg")
+  jumbotron.custom-jumbrotron-0(:showImage="true", bgImage="bg_compass.jpg")
 
   page-statement
   div.position-relative
@@ -23,21 +23,26 @@ div
           pbtn.m-auto(to="appointment" text="Kostenloser Beratungstermin")
 
   page-statement
+    template(v-slot:page-content)
+      h2 „Keine Festung ist so stark, dass Geld sie nicht einnehmen kann“
+      p - Cicero -
+
   div.position-relative
     jumbotron(:showImage="true" bgImage="geldplanze.jpg" heightClass="height-modification")
       template(v-slot:jumbotron-content)
         .custom-jumbrotron-3
+          h1.mb-lg-5 3 Einfache Schritte zum Erfolg
           .row.justify-content-between
             .col-12.col-lg-3.stepper-container
               .stepper Schritt 1
               span Wir schauen uns gemeinsam an, welche Ziele und Wünsche duerreichen willst und wie deine aktuelle, finanzielle Situation ist.
             .col-12.col-lg-3.stepper-container
               .stepper Schritt 2
-              span Wir recherchieren und prüfen unternehmensunabhängig undbranchenübergreifend aus mehr als 300 ausgewähltenUnternehmen.
+              span Wir recherchieren und prüfen unternehmensunabhängig und branchenübergreifend aus mehr als 300 ausgewählten Unternehmen.
             .col-12.col-lg-3.stepper-container
               .stepper Schritt 3
               span Du erhälst einen konkreten Plan, wie du Schritt für Schritt deine Ziele und Wünsche erreichen und mögliche Hindernisse umgehenkannst.
-          h2.mt-5 Auch danach sind wir weiterhin begleitend für dich da
+          h2.mt-md-5 Auch danach sind wir weiterhin begleitend für dich da
           pbtn.m-auto(to="appointment" text="Kostenlosen Termin buchen")
 
   page-statement
@@ -51,7 +56,7 @@ div
           p „Nicht der Wind bestimmt wohin ich segle, sondern wie ich die Segel setze.“
           p Nimm deine Zukunft in deine Hände!
           p Du bestimmst, wohin die Reise geht.
-          pbtn.mt-5.mr-auto.ml-auto(to="appointment" text="Meinen Finanzkompass erstellen")
+          pbtn.mt-5.mr-auto.ml-auto(to="appointment" text="Jetzt gratis testen")
 
   page-statement
   div.position-relative
@@ -59,7 +64,7 @@ div
       template(v-slot:jumbotron-content)
         .custom-jumbrotron-5
           img.custom-jumbrotron-5-img(src="img/axel-beta.jpg")
-          h1 Axel Beta
+          h1.mt-5 Axel Beta
           p
           | Auch ich hatte keine finanzielle Bildung in der Schule, habe mir durch diverse Nebenjobs Geld hinzuverdient und musste zeitweise mit sehr wenig Geld auskommen. Frustriert davon entschied ich mich, diesen Zustand zu ändern und mir das fehlende Finanzwissen anzueignen. Heute lebe ich seit 23 Jahren nach einem Finanzkompass.
           | Plötzliche  Autoreparaturen oder andere Notfälle werfen mich nicht aus der Bahn. Ich kann entspannt Urlaub machen, meine Freizeit aktiv gestalten und auch große Projekte umsetzen.

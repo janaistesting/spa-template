@@ -11,16 +11,12 @@
                         url: '/'
                     },
                     {
+                        title: 'Finanzkompass',
+                        url: 'nav2'
+                    },
+                    {
                         title: 'Terminvereinbarung',
                         url: 'appointment'
-                    },
-                    {
-                        title: 'Videos',
-                        url: 'nav2'
-                    },
-                    {
-                        title: 'Impressum',
-                        url: 'nav2'
                     }
                 ]
             };

@@ -27,6 +27,11 @@
     margin: 0 auto;
   }
 
+  .page-content a {
+    display: block;
+    margin: 0 auto;
+  }
+
   @media all and (min-width: 736px) {
     .page-content {
       width: 80%;

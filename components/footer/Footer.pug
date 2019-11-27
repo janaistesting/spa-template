@@ -1,2 +1,9 @@
 footer
-  div test
+  .footer-container
+    .logo-container
+      nuxt-link.nav-item(to="/") LOGO
+    pbtn.mt-3(to="financecompass" text="Meinen Finanzkompass erstellen")
+    .links-container.mt-3
+      span |
+      nuxt-link.nav-item(v-for="item in navItems" :to="item.url" :key="item.title") {{item.title}}
+      span |
