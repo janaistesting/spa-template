@@ -18,7 +18,7 @@
                 const divTop = this.getTopPos();
                 if (divTop < 400) {
                     if (document) {
-                        document.getElementsByClassName('parallax-img')[0].setAttribute("style", `transform: translate3d(0px, ${divTop*-1}px, 0px);`)
+                        document.getElementsByClassName('parallax-img')[0].setAttribute("style", `transform: translate3d(0px, ${divTop*-0.5}px, 0px);`)
                     }
                 }
             },
