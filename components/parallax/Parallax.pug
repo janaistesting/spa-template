@@ -1,6 +1,7 @@
-.parrallax-container
-  .background
-    img.background__image(src="img/bg_compass.jpg")
-  .foreground
-    .foreground__content
-      h1 Oooo, parallax
+div
+  .parallax-container(ref="parallaxContainer", :style="getStyle()")
+    .parallax-content
+      slot(name="parallax-content")
+        h1 Happy Pony
+    custom-para(containerClass="parallax-img")
+      img(src="/img/Ludwig-Wittgenstein-Background.jpg")

@@ -1,46 +1,74 @@
 <template src="./Parallax.pug" lang="pug"></template>
 
 <script>
+    import Parallax from "vue-parallaxy";
+
     export default {
-        name: "Parallax"
+        props: ['containerHeight'],
+        components: {
+            customPara: Parallax
+        },
+        data() {
+            return {
+                yPosition: 0
+            };
+        },
+        methods: {
+            handleScroll() {
+                const divTop = this.getTopPos();
+                if (divTop < 400) {
+                    if (document) {
+                        document.getElementsByClassName('parallax-img')[0].setAttribute("style", `transform: translate3d(0px, ${divTop*-1}px, 0px);`)
+                    }
+                }
+            },
+            getTopPos() {
+                return this.$refs.parallaxContainer.getBoundingClientRect().top;
+            },
+            getStyle() {
+                return {
+                    height: this.containerHeight + 'px'
+                }
+            }
+        },
+        mounted() {
+            window.addEventListener('scroll', this.handleScroll);
+        },
+        destroyed() {
+            window.removeEventListener('scroll', this.handleScroll);
+        }
     }
 </script>
 
 <style scoped>
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
-  .parrallax-container {
+  .parallax-container {
     position: relative;
-    width: 100%;
-    height: 500px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    perspective: 8px;
-    perspective-origin: 0;
-    display: flex;
+    overflow: hidden;
   }
 
-  .background {
+  .parallax-title {
     position: absolute;
-    top: 0;
+    top: 30%;
     left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+  }
+
+  .parallax-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-    transform: translateZ(0px);
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
   }
 
-  .foreground {
-    margin-top: auto;
-    margin-bottom: 50px;
-    transform-origin: 0;
-    transform: translateZ(3px);
+  .parallax-container img {
+    transform: scale(3);
   }
-
-  .foreground h1 {
-    font-size: 36px;
-  }
-
 </style>

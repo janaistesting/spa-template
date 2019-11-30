@@ -4,6 +4,7 @@
     import Jumbotron from "../components/jumbotron/Jumbotron.vue";
     import PageStatement from "../components/page/Page.vue";
     import PrimaryButton from "../components/controls/button/PrimaryButton.vue";
+    import Parallax from "../components/parallax/Parallax.vue";
 
     export default {
         data() {
@@ -12,8 +13,8 @@
         components: {
             Jumbotron,
             PageStatement,
-            pbtn: PrimaryButton
-
+            pbtn: PrimaryButton,
+            Parallax
         }
     }
 </script>
