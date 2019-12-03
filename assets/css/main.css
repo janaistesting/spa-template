@@ -20,8 +20,17 @@
   height: auto !important;
 }
 
+.height-lg-modification {
+  height: auto !important;
+}
+
 @media all and (min-width: 768px) {
   .height-modification {
+    height: 100vh !important;
+  }
+}
+@media all and (min-width: 1350px) {
+  .height-lg-modification {
     height: 100vh !important;
   }
 }

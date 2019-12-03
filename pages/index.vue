@@ -5,6 +5,7 @@
     import PageStatement from "../components/page/Page.vue";
     import PrimaryButton from "../components/controls/button/PrimaryButton.vue";
     import Parallax from "../components/parallax/Parallax.vue";
+    import VideoContainer from "@/components/videocontainer/VideoContainer";
 
     export default {
         data() {
@@ -14,7 +15,8 @@
             Jumbotron,
             PageStatement,
             pbtn: PrimaryButton,
-            Parallax
+            Parallax,
+            VideoContainer
         }
     }
 </script>
@@ -39,7 +41,7 @@
     margin-top: 150px !important;
   }
 
-  .custom-jumbrotron-3 *, .custom-jumbrotron-2, .custom-jumbrotron-4, .custom-jumbrotron-5 {
+  .custom-jumbrotron-3 *, .custom-jumbrotron-2, .custom-jumbrotron-4, .custom-jumbrotron-5, .custom-jumbrotron-6 {
     text-align: center;
   }
 

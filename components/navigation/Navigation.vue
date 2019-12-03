@@ -12,7 +12,7 @@
                     },
                     {
                         title: 'Finanzkompass',
-                        url: 'nav2'
+                        url: 'financecompass'
                     },
                     {
                         title: 'Terminvereinbarung',

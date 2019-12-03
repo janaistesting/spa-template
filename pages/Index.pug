@@ -1,5 +1,5 @@
 div
-  jumbotron.custom-jumbrotron-0(:showImage="true", bgImage="bg_compass.jpg")
+  jumbotron.custom-jumbrotron-0(:showImage="true", bgImage="bg_compass.jpg" heightClass="height-modification")
 
   page-statement
   div.position-relative
@@ -44,6 +44,14 @@ div
               span Du erhälst einen konkreten Plan, wie du Schritt für Schritt deine Ziele und Wünsche erreichen und mögliche Hindernisse umgehenkannst.
           h2.mt-md-5 Auch danach sind wir weiterhin begleitend für dich da
           pbtn.m-auto(to="appointment" text="Kostenlosen Termin buchen")
+
+  page-statement
+  div.position-relative
+    jumbotron(bgColor="var(--primary-color)" heightClass="height-lg-modification")
+      template(v-slot:jumbotron-content)
+        .custom-jumbrotron-6
+          h1.mb-lg-5 Der Erfolg wird mit Videos begleitet
+          VideoContainer
 
   page-statement
   div.position-relative

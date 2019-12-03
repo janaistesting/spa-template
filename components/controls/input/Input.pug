@@ -1,4 +1,3 @@
 div
-  label(:for="id") {{label}}
-  input(:id="id" v-model="internValue" @input="onInput")
-  b-form-invalid-feedback {{errors}
+  form-group(:validator="validationmodel" :label="label")
+    input(:id="id" v-model="internValue" @input="onInput" @blur="validationmodel.$touch()" type="text")

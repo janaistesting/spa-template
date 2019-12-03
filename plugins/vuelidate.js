@@ -1,7 +1,7 @@
 import vuelidate from "vuelidate";
 import Vue from "vue";
 import vuelidateErrorExtractor, { templates } from "vuelidate-error-extractor";
-npm
+
 Vue.use(vuelidate);
 
 Vue.use(vuelidateErrorExtractor, {
