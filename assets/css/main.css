@@ -6,14 +6,16 @@
   --dark-color: #323232;
 }
 
+
+
 * {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
   color: var(--write-color);
 }
 
-.h1 {
-  font-size: 4rem;
+.title {
+  font-size: 1.5rem !important;
 }
 
 .height-modification {
@@ -27,6 +29,10 @@
 @media all and (min-width: 768px) {
   .height-modification {
     height: 100vh !important;
+  }
+
+  .title {
+    font-size: 2.5rem !important;
   }
 }
 @media all and (min-width: 1350px) {

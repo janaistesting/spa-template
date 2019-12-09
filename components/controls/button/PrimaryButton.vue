@@ -13,6 +13,15 @@
             clazz: {
                 type: String,
                 default: "primary"
+            },
+            disabled: {
+                type: Boolean,
+                default: false
+            }
+        },
+        methods: {
+            onClick() {
+              this.$emit("onClick");
             }
         }
     }
@@ -54,5 +63,10 @@
     color: var(--disable-color);
     transition: border .2s ease-out, color .2s ease-out;
     text-decoration: none;
+  }
+
+  .disabled {
+    pointer-events: none;
+    color: #ccc;
   }
 </style>

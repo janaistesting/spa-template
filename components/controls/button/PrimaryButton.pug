@@ -1,1 +1,1 @@
-nuxt-link(:class="[clazz === 'primary' ? 'btn-primary' : 'btn-transparent']" :to="to") {{text}}
+nuxt-link(:class="[clazz === 'primary' ? 'btn-primary' : 'btn-transparent', disabled ? 'disabled':'']" :to="to" @click.native="onClick()") {{text}}

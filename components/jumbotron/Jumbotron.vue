@@ -51,6 +51,7 @@
 
   .jumbotron-custom {
     height: auto;
+    position: relative;
   }
 
   .action-container {

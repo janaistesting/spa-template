@@ -1,3 +1,10 @@
-form
-  Input(v-model="name" id="name" :errors="[]" label="Namen" :validationmodel="$v.name")
-  div {{$v}}
+.form-container
+  h1.title Terminvereinbarung
+  b-collapse(v-model="showForm")
+    form
+      Input(v-model="name" id="name" :errors="[]" label="Name" :validationmodel="$v.name" type="text")
+      Input(v-model="email" id="email" :errors="[]" label="Email-Adresse" :validationmodel="$v.email" type="email")
+      Input(v-model="phone" id="phone" :errors="[]" label="Telefonnummer" :validationmodel="$v.phone" type="text")
+      SubmitButton(@onClick="sendEmail" to="" text="Termin vereinbaren" :disabled="$v.$invalid")
+
+  p(v-if="!showForm") Die Terminvereinbarung wurde erfolgreich versendet.
