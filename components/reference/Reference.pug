@@ -1,7 +1,7 @@
 div
   .reference-wrapper
     .ref-image
-      img(src="`img/reference/${image}`")
+      img(:src="`img/reference/${image}`" :alt='name')
     .ref-info
       p {{name}}
       p {{text}}
