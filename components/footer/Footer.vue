@@ -12,8 +12,8 @@
                         url: '/'
                     },
                     {
-                        title: 'Finanzkompass',
-                        url: 'nav2'
+                        title: 'Referenzen',
+                        url: 'references'
                     },
                     {
                         title: 'Terminvereinbarung',
@@ -61,5 +61,9 @@
     display: block;
     padding: 10px;
     color: white;
+  }
+
+  .footer-logo {
+    text-transform: uppercase;
   }
 </style>

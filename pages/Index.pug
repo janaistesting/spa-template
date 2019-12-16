@@ -1,26 +1,42 @@
 div
-  jumbotron.custom-jumbrotron-0(:showImage="true", bgImage="bg_compass.jpg" heightClass="height-modification")
+  Modal(modalid="modal-1", title='Kurzvorstellung-Mehrwert')
+    template(v-slot:modal-content)
+      VideoIFrame(url='https://player.vimeo.com/video/375219154' description='Ich liebe dich')
+
+  jumbotron.custom-jumbrotron-0(:showImage="true", bgImage="bg_compass.jpg" heightClass="height-modification" :showArrow="true")
+    template(v-slot:jumbotron-action)
 
   page-statement
   div.position-relative
-    jumbotron(:showVideo="true" overLayColor="rgba(15, 54, 97, 0.8)" heightClass="height-modification")
+    jumbotron(:showImage="true" bgImage="schulsystem.jpg" overLayColor="rgba(15, 54, 97, 0.8)" heightClass="height-modification")
       template(v-slot:jumbotron-content)
         .custom-jumbrotron-1
           h1 Kennen Sie das Problem, dass einem das Geld durch die Finger rinnt und es bei plötzlichen Notfällen eng wird auf dem Konto?
-          p Im deutschen Schulsystem steht viel auf dem Lehrplan. Finanzielle Bildung und Erfolgswissen i.d.R. Leider nicht. Deshalb ist das Thema Finanzen für viele Menschen häufig nur eins, nämlich ätzend.
-          p Es scheint so, als ob man eine Rechnung bezahlt und die nächste Ausgabe bereits um die Ecke schielt.
-          h2.mt-5 Jetzt gibt es den persönlichen Finanzkompass. Einmal erstellt, dauerhaft Zeit und Geld gespart.
-          pbtn.m-auto(to="appointment" text="Mehr erfahren")
+          p.description Im deutschen Schulsystem steht viel auf dem Lehrplan. Finanzielle Bildung und Erfolgswissen i.d.R. Leider nicht. Deshalb ist das Thema Finanzen für viele Menschen häufig nur eins, nämlich ätzend.
+          p.description Es scheint so, als ob man eine Rechnung bezahlt und die nächste Ausgabe bereits um die Ecke schielt.
+          h2.mt-1 Jetzt gibt es den persönlichen Finanzkompass. Einmal erstellt, dauerhaft Zeit und Geld gespart.
+          .row.action-container
+            pbtn.col-12.col-md-5(to="appointment" text="Kostenlosen Termin vereinbaren")
+            pbtn.col-12.col-md-5.btn-transparent(to="appointment" text="Mehr erfahren")
 
   page-statement
+    template(v-slot:page-content)
+      h2 „Es gibt nur eins, was auf Dauer teurer ist als Bildung: Keine Bildung“
+      p John F. Kennedy
+
   div.position-relative
-    jumbotron(:showImage="true" bgImage="plan.jpg" overLayColor="rgba(15, 54, 97, 0.8)" heightClass="height-modification")
+    jumbotron(:showImage="true" bgImage="cool-plan.jpg" overLayColor="rgba(15, 54, 97, 0.8)" heightClass="height-modification")
       template(v-slot:jumbotron-content)
         .custom-jumbrotron-2
           h1 „Cool, endlich hab ich einen Plan“
-          p Das Besondere am Finanzkompass ist, dass er die verschiedensten Lebenssituationen berücksichtigt, aufeinander abstimmt und am Ende übersichtlich und klar auf einer Seite DIN A4 komprimiert ist.
-          p Der Vorteil: Bei finanziellen Entscheidungen nur einen Blick auf seinen Finanzkompass werfen und sofort im Bilde sein, ob der Kurs stimmt.
-          pbtn.m-auto(to="appointment" text="Kostenloser Beratungstermin")
+          p.description Das Besondere am Finanzkompass ist, dass er die verschiedensten Lebenssituationen berücksichtigt, aufeinander abstimmt und am Ende übersichtlich und klar auf einer Seite DIN A4 komprimiert ist.
+          p.description Der Vorteil: Bei finanziellen Entscheidungen nur einen Blick auf seinen Finanzkompass werfen und sofort im Bilde sein, ob der Kurs stimmt.
+          pbtn.m-auto(to="appointment" text="Kostenlosen Termin vereinbaren")
+
+  page-statement
+    template(v-slot:page-content)
+      h2 „Nicht zu planen heißt den Misserfolg zu planen“
+      p Brian Tracy
 
   div.position-relative
     jumbotron(:showImage="true" bgImage="geldplanze.jpg" heightClass="height-modification")
@@ -38,30 +54,41 @@ div
               .stepper Schritt 3
               span Du erhälst einen konkreten Plan, wie du Schritt für Schritt deine Ziele und Wünsche erreichen und mögliche Hindernisse umgehenkannst.
           h2.mt-md-5 Auch danach sind wir weiterhin begleitend für dich da
-          pbtn.m-auto(to="appointment" text="Kostenlosen Termin buchen")
+          pbtn.mt-5.mr-auto.ml-auto(to="appointment" text="Kostenlosen Termin vereinbaren")
 
-  page-statement
   div.position-relative
-    jumbotron(bgColor="var(--primary-color)" heightClass="height-lg-modification")
+    jumbotron(:showImage="false" bgImage="cool-plan.jpg" overLayColor="rgba(15, 54, 97, 0.8)" heightClass="height-modification")
       template(v-slot:jumbotron-content)
         .custom-jumbrotron-6
-          h1.mb-lg-5 Der Erfolg wird mit Videos begleitet
-          VideoContainer
+          p.description.mt-0 Inzwischen bin ich seit 26 Jahren als Berater aktiv und betreue meine Kunden langfristig und nachhaltig. Bei vielen auch schon die Kinder in der 2. Generation.
+          h2.headline Erfolgreich auf Kurs
+          .references
+            p.description „Ich schätze deine Expertise“ -
+              span.people &nbspJules Lamy, 35J, Anlagenmechaniker
+            p.description „Top Betreuer, Pech für den, der ihn nicht hat“ -
+              span.people &nbspJens Wihsinger ,46J, leitender Vertriebsmitarbeiter
+            p.description „Schon unser Erstgespräch war total klasse und hat mir die Augen geöffnet“ -
+              span.people &nbspFlorian Danger, 22J Fluggerätemechaniker
+            p.description „Sehr ehrliche, freundliche und transparente Beratung“ -
+              span.people &nbspFamilie Gottsleben
 
-  page-statement
   div.position-relative
     jumbotron(:showImage="true" bgImage="segelboot.jpg" heightClass="height-modification")
       template(v-slot:jumbotron-content)
         .custom-jumbrotron-4
           h1 Wenn du alles lässt wie bisher und nichts änderst, rinnt dir weiterhin das Geld durch die Finger.
-          p Die fehlende Finanzplanung nötigt dir in der Konsequenz Entscheidungen ab, deren Folge du lieber nicht gehabt hättest. Der Zufall trifft dich mit voller Wucht – und zwar dann, wenn es gerade eh nicht passt.
+          p.description Die fehlende Finanzplanung nötigt dir in der Konsequenz Entscheidungen ab, deren Folge du lieber nicht gehabt hättest. Der Zufall trifft dich mit voller Wucht – und zwar dann, wenn es gerade eh nicht passt.
           h2.mt-5 Motto der Segler:
-          p „Nicht der Wind bestimmt wohin ich segle, sondern wie ich die Segel setze.“
-          p Nimm deine Zukunft in deine Hände!
-          p Du bestimmst, wohin die Reise geht.
-          pbtn.mt-5.mr-auto.ml-auto(to="appointment" text="Jetzt gratis testen")
+          p.description „Nicht der Wind bestimmt wohin ich segle, sondern wie ich die Segel setze.“
+          p.description Nimm deine Zukunft in deine Hände!
+          p.description Du bestimmst, wohin die Reise geht.
+          pbtn.mt-5.mr-auto.ml-auto(to="appointment" text="Meinen Finanzkompass erstellen")
 
   page-statement
+    template(v-slot:page-content)
+      h2 „Jede große Reise beginnt mit einem kleinen Schritt“
+      p Konfuzis
+
   div.position-relative
     jumbotron(:showImage="true" bgImage="segelboot.jpg" heightClass="height-modification")
       template(v-slot:jumbotron-content)
@@ -72,4 +99,4 @@ div
           | Auch ich hatte keine finanzielle Bildung in der Schule, habe mir durch diverse Nebenjobs Geld hinzuverdient und musste zeitweise mit sehr wenig Geld auskommen. Frustriert davon entschied ich mich, diesen Zustand zu ändern und mir das fehlende Finanzwissen anzueignen. Heute lebe ich seit 23 Jahren nach einem Finanzkompass.
           | Plötzliche  Autoreparaturen oder andere Notfälle werfen mich nicht aus der Bahn. Ich kann entspannt Urlaub machen, meine Freizeit aktiv gestalten und auch große Projekte umsetzen.
 
-          pbtn.mt-5.mr-auto.ml-auto(to="appointment" text="Meinen Finanzkompass erstellen")
+          pbtn.mt-5.mr-auto.ml-auto(to="appointment" text="Jetzt gratis starten")

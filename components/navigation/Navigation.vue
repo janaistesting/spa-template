@@ -11,8 +11,8 @@
                         url: '/'
                     },
                     {
-                        title: 'Finanzkompass',
-                        url: 'financecompass'
+                        title: 'Referenzen',
+                        url: 'references'
                     },
                     {
                         title: 'Terminvereinbarung',
@@ -80,12 +80,16 @@
     top: 30px;
     margin: 0 auto;
     width: 100%;
-    border-bottom: var(--secondary-color) 2px solid;
+    border-bottom: var(--primary-color) 2px solid;
     text-decoration: none;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: example;
     animation-duration: 4s;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem !important;
   }
 
   .navigation nav {

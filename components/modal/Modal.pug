@@ -1,2 +1,4 @@
 div
-  hello
+  b-modal(:title='title' :id='modalid' hide-footer)
+    slot(name='modal-content')
+      p.my-4 Hello from modal!

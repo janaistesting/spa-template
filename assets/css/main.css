@@ -1,12 +1,11 @@
 :root {
-  --primary-color: #0F3661;
+  --primary-color: #df7b26;
+  --primary-color-disabled: #C96F20;
   --secondary-color: #F2C21A;
   --write-color: white;
   --disable-color: darkgray;
   --dark-color: #323232;
 }
-
-
 
 * {
   font-family: 'Work Sans', sans-serif;
@@ -16,6 +15,14 @@
 
 .title {
   font-size: 1.5rem !important;
+}
+
+.text-color-primary {
+  color: var(--primary-color);
+}
+
+.text-color-secondary {
+  color: var(--secondary-color);
 }
 
 .height-modification {

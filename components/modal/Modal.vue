@@ -2,10 +2,12 @@
 
 <script>
     export default {
-        name: "Modal"
+        props: ['modalid', 'title']
     }
 </script>
 
-<style scoped>
-
+<style>
+  .modal-title {
+    color: black;
+  }
 </style>

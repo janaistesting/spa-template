@@ -27,7 +27,7 @@
     }
 </script>
 
-<style scoped>
+<style>
   .btn-primary, .btn-transparent {
     padding: 10px 40px;
     text-align: center;
@@ -35,34 +35,36 @@
     max-width: 500px;
     justify-content: center;
     align-items: center;
+    border-radius: 0.25rem ;
   }
 
   .btn-primary {
     background-color: var(--primary-color);
-    border-radius: unset;
+    font-weight: 500;
     border: var(--primary-color) 4px solid;
-    transition: border .2s ease-out, color .5s ease-out, background-color .2s ease-out;
+    transition: border .2s ease-out, color .2s ease-out, background-color .2s ease-out;
   }
 
   .btn-primary:hover {
-    background-color: var(--secondary-color);
-    border: var(--secondary-color) 4px solid;
+    background-color: var(--primary-color-disabled);
+    border: var(--primary-color-disabled) 4px solid;
     transition: border .2s ease-out, color .2s ease-out, background-color .2s ease-out;
   }
 
   .btn-transparent {
     background-color: transparent;
-    border: white 4px solid;
+    border: white 3px solid;
     color: var(--write-color);
     font-weight: bold;
     transition: border .2s ease-out, color .2s ease-out;
   }
 
   .btn-transparent:hover {
-    border: var(--disable-color) 4px solid;
+    border: var(--disable-color) 3px solid;
     color: var(--disable-color);
     transition: border .2s ease-out, color .2s ease-out;
     text-decoration: none;
+    background-color: transparent;
   }
 
   .disabled {
