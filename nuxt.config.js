@@ -4,7 +4,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   }
 } : {};
 
-const routes: [
+const routes = [
   'references/reference/floriandanger',
   'references/reference/juleslamy',
   'references/reference/nicolelorenzmattke',
