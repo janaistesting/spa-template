@@ -10,4 +10,8 @@
   .modal-title {
     color: black;
   }
+
+  .modal-dialog {
+    max-width: 700px !important;
+  }
 </style>

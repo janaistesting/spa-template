@@ -1,7 +1,11 @@
 div
   Modal(modalid="modal-1", title='Kurzvorstellung-Mehrwert')
     template(v-slot:modal-content)
-      VideoIFrame(url='https://player.vimeo.com/video/375219154' description='Ich liebe dich')
+      VideoIFrame(url='https://player.vimeo.com/video/375219154')
+
+  Modal(modalid="modal-2", title='Fehlende Finanzplanung-Gründe und Lösungen')
+    template(v-slot:modal-content)
+      VideoIFrame(url='https://player.vimeo.com/video/375219594')
 
   jumbotron.custom-jumbrotron-0(:showImage="true", bgImage="bg_compass.jpg" heightClass="height-modification" :showArrow="true")
     template(v-slot:jumbotron-action)
@@ -17,7 +21,7 @@ div
           h2.mt-1 Jetzt gibt es den persönlichen Finanzkompass. Einmal erstellt, dauerhaft Zeit und Geld gespart.
           .row.action-container
             pbtn.col-12.col-md-5(to="appointment" text="Kostenlosen Termin vereinbaren")
-            pbtn.col-12.col-md-5.btn-transparent(to="appointment" text="Mehr erfahren")
+            b-button.col-12.col-md-5.btn-transparent(v-b-modal.modal-2) Mehr erfahren
 
   page-statement
     template(v-slot:page-content)

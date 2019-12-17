@@ -2,24 +2,12 @@
 
 <script>
     import Reference from "@/components/reference/Reference";
+    import References from "@/static/references.json";
 
     export default {
         data() {
             return {
-                references: [
-                    {
-                        image: 'florian_danger.JPG',
-                        name: 'Florian Danger',
-                        profession: 'Fluggerätemechaniker',
-                        text: '„Unser Erstgespräch war total klasse und hat mir die Augen geöffnet“'
-                    },
-                    {
-                        image: 'florian_danger.JPG',
-                        name: 'Florian Danger',
-                        profession: 'Fluggerätemechaniker',
-                        text: '„Unser Erstgespräch war total klasse und hat mir die Augen geöffnet“'
-                    }
-                ]
+                references: References
             };
         },
         components: {
@@ -35,12 +23,26 @@
   }
 
   .page {
-    padding-top: 300px;
-    width: 80%;
+    padding: 300px 0 100px 0;
+    width: 100%;
     margin: 0 auto;
   }
 
   .references-container {
+    justify-content: center;
+  }
 
+  @media all and (min-width: 768px) {
+    .page {
+      padding: 300px 0 100px 0;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  @media all and (min-width: 905px) {
+    .references-container {
+      justify-content: space-between;
+    }
   }
 </style>

@@ -1,8 +1,13 @@
 div
   .reference-wrapper
+    .ref-background
     .ref-image
       img(:src="`img/reference/${image}`" :alt='name')
     .ref-info
-      p {{name}}
-      p {{text}}
-
+      .ref-meta-info
+        p.name {{name}}
+        p.profession {{profession}}
+      .ref-meta-text.mt-4
+        p {{text}}
+    .ref-link
+      nuxt-link(:to="`/references/reference/${id}`") Zur Referenz

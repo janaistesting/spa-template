@@ -1,0 +1,37 @@
+[
+  {
+    "id": "floriandanger",
+    "image": "florian_danger.jpg",
+    "name": "Florian Danger",
+    "profession": "Fluggerätemechaniker",
+    "text": "„Unser Erstgespräch war total klasse und hat mir die Augen geöffnet“"
+  },
+  {
+    "id": "juleslamy",
+    "image": "jules_lamy.jpg",
+    "name": "Jules Lamy",
+    "profession": "Anlagenmechaniker",
+    "text": "„Ich schätze deine Expertise“"
+  },
+  {
+    "id": "nicolelorenzmattke",
+    "image": "nicolelorenz_mattke.jpg",
+    "name": "Nicole und Lorenz Mattke",
+    "profession": "Einzelhandelskauffrau & Außenhandelkaufmann",
+    "text": "„Axel kümmert sich super um unsere finanziellen Angelegenheiten“"
+  },
+  {
+    "id": "jenswihsinger",
+    "image": "jens_wihsinger.jpg",
+    "name": "Jens Wihsinger",
+    "profession": "Leitender Vetriebsmitarbeiter",
+    "text": "„Bei Terminsachen hat Axel eine top Wiedervorlage“"
+  },
+  {
+    "id": "gottsleben",
+    "image": "gottsleben.jpg",
+    "name": "Familie Gottsleben",
+    "profession": "Leitender Angestellter, selbständige Frisörin und Event-Gastronomin, Student",
+    "text": "„Sehr freundliche, ehrliche und transparente Beratung - Bereits die ersten Gespräche waren sehr freundlich und offen“"
+  }
+]

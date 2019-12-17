@@ -38,7 +38,7 @@
         data() {
             return {
                 title: "Dein persönlicher Finanzkompass",
-                subtitles: ['Einfach', 'Zeitsparend', 'Leicht umzusetzen']
+                subtitles: ['Einfach', 'Zeitsparend', 'Auf einer Seite DIN A4']
             };
         },
         components: {

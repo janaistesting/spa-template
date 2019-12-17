@@ -1,4 +1,4 @@
 .page-wrapper
   .page
     .row.references-container
-      Reference(v-for='{image, name, profession, text} in references' :image='image' :name='name' :profession='profession' :text='text')
+      Reference(v-for='{image, name, profession, text, id} in references' :key='id' :image='image' :name='name' :profession='profession' :text='text' :id="id")

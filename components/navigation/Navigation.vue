@@ -12,11 +12,11 @@
                     },
                     {
                         title: 'Referenzen',
-                        url: 'references'
+                        url: '/references'
                     },
                     {
                         title: 'Terminvereinbarung',
-                        url: 'appointment'
+                        url: '/appointment'
                     }
                 ]
             };
@@ -54,7 +54,6 @@
     color: var(--write-color) !important;
     font-weight: 300;
     font-size: 14px;
-    text-transform: uppercase;
   }
 
   .navigation .bg-info {
