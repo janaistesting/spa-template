@@ -132,10 +132,6 @@
     background-color: rgba(102, 102, 102, 0.8);
   }
 
-  body {
-    background:#0b1d2a;
-  }
-
   .arrows {
     width: 60px;
     height: 72px;

@@ -9,5 +9,6 @@ div
         p.profession {{profession}}
       .ref-meta-text.mt-4
         p {{text}}
-    .ref-link
-      nuxt-link(:to="`/references/reference/${id}`") Zur Referenz
+    nuxt-link.hover-overlay(:to="`/references/reference/${id}`")
+      .hover-overlay-symbol
+        p Klick

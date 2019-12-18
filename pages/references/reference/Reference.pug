@@ -1,3 +1,12 @@
 .page-wrapper
-  p Name: {{reference.name}}
-  img(:src="`img/reference/${reference.image}`" :alt='reference.name')
+  .header
+    .title {{reference.slogan}}
+  .content
+    .ref-image
+      img(:src="`img/reference/${reference.image}`" :alt='reference.name')
+    .text
+      h1.name {{reference.name}}
+      p.profession.mb-5 {{reference.age === 0 ? '' : `${reference.age}J - `}}  {{reference.profession}}
+      p.longtext(v-html="reference.longtext")
+      p.end.mt-5(v-if="reference.end !== ''") Abschließend zu sagen:
+      p.end-text.mb-5 {{reference.end}}
