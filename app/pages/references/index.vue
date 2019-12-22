@@ -1,19 +1,22 @@
 <template src="./Index.pug" lang="pug"></template>
 
 <script>
-    import Reference from "@/components/reference/Reference";
-    import References from "@/static/references.json";
+  import Reference from "@/components/reference/Reference";
+  import References from "@/static/references.json";
 
-    export default {
-        data() {
-            return {
-                references: References
-            };
-        },
-        components: {
-            Reference
-        }
+  export default {
+    head() {
+      return {title: "Finanzkompass Referenzen"};
+    },
+    data() {
+      return {
+        references: References
+      };
+    },
+    components: {
+      Reference
     }
+  }
 </script>
 
 <style scoped>

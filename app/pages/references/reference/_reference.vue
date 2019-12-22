@@ -1,26 +1,31 @@
 <template src="./Reference.pug" lang="pug"></template>
 
 <script>
-    import References from "@/static/references.json";
+  import References from "@/static/references.json";
 
-    export default {
-        created() {
-            if (this.$route.params) {
-                const {reference: name} = this.$route.params;
-                this.reference = this.findByName(name);
-            }
-        },
-        data() {
-            return {
-                reference: {}
-            }
-        },
-        methods: {
-            findByName(name) {
-                return References.filter(entry => entry.id === name)[0];
-            }
-        }
+  export default {
+    head() {
+      return {title: `Referenz von ${name}`};
+    },
+    created() {
+      if (this.$route.params) {
+        const {reference: name} = this.$route.params;
+        this.reference = this.findByName(name);
+        this.name = name;
+      }
+    },
+    data() {
+      return {
+        reference: {},
+        name: ""
+      }
+    },
+    methods: {
+      findByName(name) {
+        return References.filter(entry => entry.id === name)[0];
+      }
     }
+  }
 </script>
 
 <style>

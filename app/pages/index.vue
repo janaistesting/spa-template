@@ -10,6 +10,9 @@
   import VideoIFrame from "@/components/controls/video/VideoIFrame.vue";
 
   export default {
+    head() {
+      return {};
+    },
     components: {
       Jumbotron,
       PageStatement,

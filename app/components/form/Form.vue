@@ -1,9 +1,10 @@
 <template src="./Form.pug" lang="pug"></template>
 
 <script>
-  import {required, minLength, maxLength, email} from 'vuelidate/lib/validators'
+  import {email, maxLength, minLength, required} from 'vuelidate/lib/validators'
   import Input from "@/components/controls/input/Input.vue";
   import SubmitButton from "@/components/controls/button/PrimaryButton.vue";
+  import FormService from "./FormService";
 
   export default {
     data() {
@@ -33,10 +34,15 @@
       }
     },
     methods: {
-      sendEmail() {
-        console.log("Hello");
+      async sendEmail() {
         if (!this.$v.$invalid) {
-          this.showForm = false;
+
+          const result = await FormService.sendEmailToServer("test", "test", "test", "test");
+
+          console.log("Result: ", result);
+          if (result) {
+            this.showForm = false;
+          }
         }
       }
     },
