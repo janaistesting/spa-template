@@ -2,7 +2,7 @@
 
 <script>
     export default {
-        props: ["value", "id", "label", "errors", "validationmodel", "type"],
+        props: ["value", "id", "label", "errors", "validationmodel", "type", "min", "max"],
         data(){
             return {
                 internValue: this.value

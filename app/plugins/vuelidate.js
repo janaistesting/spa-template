@@ -5,15 +5,11 @@ import vuelidateErrorExtractor, { templates } from "vuelidate-error-extractor";
 Vue.use(vuelidate);
 
 Vue.use(vuelidateErrorExtractor, {
-  /**
-   * Optionally provide the template in the configuration.
-   * or register like so Vue.component("FormField", templates.singleErrorExtractor.foundation6)
-   */
   template: templates.singleErrorExtractor.foundation6, // you can also pass your own custom template
-  messages: { required: "The {attribute} field is required" }, // error messages to use
-  attributes: { // maps form keys to actual field names
-    email: "Email",
-    first_name: "First name",
-    last_name: "Last name"
+  messages: {
+    required: "Das Feld {attribute} wird benötigt",
+    email: "Die angegebene Email ist fehlerhaft",
+    maxLength: "Das Feld {attribute} ist zu lang. Es sind {max} Zeichen erlaubt",
+    minLength: "Das Feld {attribute} ist zu kurz. Es müssen mehr als {min} Zeichen sein"
   }
 });

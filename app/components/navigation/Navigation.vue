@@ -1,27 +1,33 @@
 <template src="./Navigation.pug" lang="pug"></template>
 
 <script>
-    export default {
-        name: "Navigation",
-        data() {
-            return {
-                navItems: [
-                    {
-                        title: 'Startseite',
-                        url: '/'
-                    },
-                    {
-                        title: 'Referenzen',
-                        url: '/references'
-                    },
-                    {
-                        title: 'Terminvereinbarung',
-                        url: '/appointment'
-                    }
-                ]
-            };
+  export default {
+    data() {
+      return {
+        navItems: [
+          {
+            title: 'Startseite',
+            url: '/'
+          },
+          {
+            title: 'Referenzen',
+            url: '/references'
+          },
+          {
+            title: 'Terminvereinbarung',
+            url: '/appointment'
+          }
+        ]
+      };
+    },
+    methods: {
+      onBurgerButtonClick() {
+        if (this.$refs.burgerButton.show) {
+          this.$refs.burgerButton.show = false;
         }
+      }
     }
+  }
 </script>
 
 <style>
@@ -31,6 +37,11 @@
     margin-top: 20px;
     position: absolute;
     z-index: 2;
+  }
+
+  #nav-collapse {
+    width: 90%;
+    margin: 0 auto;
   }
 
   .navbar {
@@ -102,11 +113,21 @@
   }
 
   @keyframes example {
-    0%   {top: 30px;}
-    20%  {top: 20px;}
-    50%  {top: 20px;}
-    70% {top: 20px;}
-    100% {top: 30px;}
+    0% {
+      top: 30px;
+    }
+    20% {
+      top: 20px;
+    }
+    50% {
+      top: 20px;
+    }
+    70% {
+      top: 20px;
+    }
+    100% {
+      top: 30px;
+    }
   }
 
   @media all and (min-width: 768px) {

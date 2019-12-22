@@ -1,31 +1,35 @@
 <template src="./Index.pug" lang="pug"></template>
 
 <script>
-    import Jumbotron from "../components/jumbotron/Jumbotron.vue";
-    import PageStatement from "../components/page/Page.vue";
-    import PrimaryButton from "../components/controls/button/PrimaryButton.vue";
-    import Parallax from "../components/parallax/Parallax.vue";
-    import VideoContainer from "@/components/videocontainer/VideoContainer";
-    import Modal from "@/components/modal/Modal.vue";
-    import VideoIFrame from "@/components/controls/video/VideoIFrame.vue";
+  import Jumbotron from "../components/jumbotron/Jumbotron.vue";
+  import PageStatement from "../components/page/Page.vue";
+  import PrimaryButton from "../components/controls/button/PrimaryButton.vue";
+  import Parallax from "../components/parallax/Parallax.vue";
+  import VideoContainer from "@/components/videocontainer/VideoContainer";
+  import Modal from "@/components/modal/Modal.vue";
+  import VideoIFrame from "@/components/controls/video/VideoIFrame.vue";
 
-    export default {
-        components: {
-            Jumbotron,
-            PageStatement,
-            pbtn: PrimaryButton,
-            Parallax,
-            VideoContainer,
-            Modal,
-            VideoIFrame
-        }
+  export default {
+    components: {
+      Jumbotron,
+      PageStatement,
+      pbtn: PrimaryButton,
+      Parallax,
+      VideoContainer,
+      Modal,
+      VideoIFrame
     }
+  }
 </script>
 
 <style>
 
   jumbotron {
     height: auto !important;
+  }
+
+  .custom-jumbrotron-0 .jumbotron-custom {
+    padding-top: 200px;
   }
 
   .custom-jumbrotron-1 h1, .custom-jumbrotron-1 p, .custom-jumbrotron-1 h2, .custom-jumbrotron-2 h1, .custom-jumbrotron-2 p, .custom-jumbrotron-2 h2 {
@@ -97,6 +101,12 @@
   @media all and (min-width: 736px) {
     .custom-jumbrotron-1 {
       padding: 30px;
+    }
+  }
+
+  @media all and (min-width: 767px) {
+    .custom-jumbrotron-0 .jumbotron-custom {
+      padding-top: 0;
     }
   }
 
