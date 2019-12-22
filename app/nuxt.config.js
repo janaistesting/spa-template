@@ -14,9 +14,7 @@ const routes = [
 
 export default {
   mode: 'universal',
-  router: {
-    base: '/spa-template/'
-  },
+  ...routerBase,
   /*
   ** Headers of the page
   */

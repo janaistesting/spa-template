@@ -1,19 +1,19 @@
+# syntax=docker/dockerfile:1.0.0-experimental
 FROM node:12.14.0
 
-
 #Environemnts
-ENV host=18.184.46.63
-ENV user=bitnami
+ARG LIGHTSAIL_HOST=18.184.46.63
+ARG LIGHTSAIL_USER=bitnami
+ARG DEPLOY_ENV=AWS
 
 # install nuxt to generate static content
 COPY ./app/. /app/
 COPY ./scripts/deploy.sh /scripts/deploy.sh
 
-#TODO change ALERT SECURITY
-COPY ./scripts/scp.pem /app/security/scp.pem
-RUN chmod 400 /app/security/scp.pem
-
 # install nuxt to generate static content
-RUN npm install -g nuxt && npm run --prefix /app/ generate
+RUN npm install -g nuxt
+    && npm run --prefix /app/ generate
 
-RUN scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /app/security/scp.pem -r /app/dist/* bitnami@18.184.46.63:/home/bitnami/stack/nginx/html/
+RUN --mount=type=secret,id=sshkey,dst=/tmp/sshkey.pem
+    && chmod 400 /tmp/sshkey.pem
+    && scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /tmp/ssh.key.pem -r /app/dist/* bitnami@18.184.46.63:/home/bitnami/stack/nginx/html/
