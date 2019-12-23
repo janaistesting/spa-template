@@ -31,6 +31,20 @@
     height: auto !important;
   }
 
+  .ref-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .ref-image img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 100px;
+    border: 4px var(--primary-color) solid;
+  }
+
   .custom-jumbrotron-0 .jumbotron-custom {
     padding-top: 200px;
   }
@@ -45,8 +59,32 @@
     text-align: center;
   }
 
+  .custom-jumbrotron-6 p .text {
+    color: black !important;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .custom-jumbrotron-5 p {
+    font-size: 1.2rem;
+  }
+
   .custom-jumbrotron-6 p {
     color: black !important;
+  }
+
+  .custom-jumbrotron-6 .text-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .custom-jumbrotron-6 .right {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .ref-container {
+    margin: 20px 0;
   }
 
   .custom-jumbrotron-6 h2 {
@@ -110,6 +148,10 @@
   @media all and (min-width: 767px) {
     .custom-jumbrotron-0 .jumbotron-custom {
       padding-top: 0;
+    }
+
+    .custom-jumbrotron-6 p .text {
+      text-align: left;
     }
   }
 

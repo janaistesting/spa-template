@@ -1,59 +1,54 @@
 <template src="./Jumbotron.pug" lang="pug"></template>
 
 <script>
-    import PrimaryButton from "../controls/button/PrimaryButton.vue";
-    import ScrollText from "@/components/scrolltext/ScrollText.vue";
+  import PrimaryButton from "../controls/button/PrimaryButton.vue";
+  import ScrollText from "@/components/scrolltext/ScrollText.vue";
 
-    export default {
-        props: {
-            showVideo: {
-                type: Boolean,
-                default: false
-            },
-            showVideoOverlay: {
-                type: Boolean,
-                default: true
-            },
-            showImage: {
-                type: Boolean,
-                default: false
-            },
-            bgImage: {
-                type: String
-            },
-            bgColor: {
-                type: String
-            },
-            heightClass: {
-                type: String
-            },
-            overLayColor: {
-                type: String
-            },
-            showArrow: {
-                type: Boolean,
-                default: false
-            }
-        },
-        data() {
-            return {
-                title: "Dein persönlicher Finanzkompass",
-                subtitles: ['Einfach', 'Zeitsparend', 'Auf einer Seite DIN A4']
-            };
-        },
-        components: {
-            pbtn: PrimaryButton,
-            ScrollText
-        }
+  export default {
+    props: {
+      showVideo: {
+        type: Boolean,
+        default: false
+      },
+      showVideoOverlay: {
+        type: Boolean,
+        default: true
+      },
+      showImage: {
+        type: Boolean,
+        default: false
+      },
+      bgImage: {
+        type: String
+      },
+      bgColor: {
+        type: String
+      },
+      heightClass: {
+        type: String
+      },
+      overLayColor: {
+        type: String
+      },
+      showArrow: {
+        type: Boolean,
+        default: false
+      }
+    },
+    data() {
+      return {
+        title: "Dein persönlicher Finanzkompass",
+        subtitles: ['Einfach', 'Zeitsparend', 'Auf einer Seite DIN A4']
+      };
+    },
+    components: {
+      pbtn: PrimaryButton,
+      ScrollText
     }
+  }
 </script>
 
 <style scoped>
-
-  video {
-    object-fit: cover;
-    width: 100%;
-  }
 
   .jumbotron-custom {
     height: auto;
@@ -149,35 +144,50 @@
     -webkit-animation: arrow 2s infinite;
   }
 
-  @keyframes arrow
-  {
-    0% {opacity:0}
-    40% {opacity:1}
-    80% {opacity:0}
-    100% {opacity:0}
+  @keyframes arrow {
+    0% {
+      opacity: 0
+    }
+    40% {
+      opacity: 1
+    }
+    80% {
+      opacity: 0
+    }
+    100% {
+      opacity: 0
+    }
   }
 
   @-webkit-keyframes arrow /*Safari and Chrome*/
   {
-    0% {opacity:0}
-    40% {opacity:1}
-    80% {opacity:0}
-    100% {opacity:0}
+    0% {
+      opacity: 0
+    }
+    40% {
+      opacity: 1
+    }
+    80% {
+      opacity: 0
+    }
+    100% {
+      opacity: 0
+    }
   }
 
   .arrows path.a1 {
-    animation-delay:-1s;
-    -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s; /* Safari 和 Chrome */
   }
 
   .arrows path.a2 {
-    animation-delay:-0.5s;
-    -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
   }
 
   .arrows path.a3 {
-    animation-delay:0s;
-    -webkit-animation-delay:0s; /* Safari 和 Chrome */
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s; /* Safari 和 Chrome */
   }
 
   @media all and (min-width: 736px) {
@@ -187,7 +197,7 @@
 
     .jumbotron-container {
       width: 80%;
-      margin: 0 auto;
+      margin: 30px auto;
       z-index: 5;
     }
 

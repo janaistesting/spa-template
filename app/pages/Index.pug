@@ -43,7 +43,7 @@ div
       p Brian Tracy
 
   div.position-relative
-    jumbotron(:showImage="true" bgImage="geldplanze.jpg" heightClass="height-modification")
+    jumbotron(:showImage="true" bgImage="geldplanze.jpg" heightClass="height-lg-modification")
       template(v-slot:jumbotron-content)
         .custom-jumbrotron-3
           h1.mb-lg-5 3 Einfache Schritte zum Erfolg
@@ -58,23 +58,40 @@ div
               .stepper Schritt 3
               span Du erhälst einen konkreten Plan, wie du Schritt für Schritt deine Ziele und Wünsche erreichen und mögliche Hindernisse umgehenkannst.
           h2.mt-md-5 Auch danach sind wir weiterhin begleitend für dich da
-          pbtn.mt-5.mr-auto.ml-auto(to="appointment" text="Kostenlosen Termin vereinbaren")
+          pbtn.mt-5.mb-md-5.mb-xxl-0.mr-auto.ml-auto(to="appointment" text="Kostenlosen Termin vereinbaren")
 
   div.position-relative
     jumbotron(:showImage="false" bgImage="cool-plan.jpg" overLayColor="rgba(15, 54, 97, 0.8)" heightClass="height-modification")
       template(v-slot:jumbotron-content)
         .custom-jumbrotron-6
-          p.description.mt-0 Inzwischen bin ich seit 26 Jahren als Berater aktiv und betreue meine Kunden langfristig und nachhaltig. Bei vielen auch schon die Kinder in der 2. Generation.
           h2.headline Erfolgreich auf Kurs
+          p.description.mt-0 Inzwischen bin ich seit 26 Jahren als Berater aktiv und betreue meine Kunden langfristig und nachhaltig. Bei vielen auch schon die Kinder in der 2. Generation.
           .references
-            p.description „Ich schätze deine Expertise“ -
-              span.people &nbspJules Lamy, 35J, Anlagenmechaniker
-            p.description „Top Betreuer, Pech für den, der ihn nicht hat“ -
-              span.people &nbspJens Wihsinger ,46J, leitender Vertriebsmitarbeiter
-            p.description „Schon unser Erstgespräch war total klasse und hat mir die Augen geöffnet“ -
-              span.people &nbspFlorian Danger, 22J Fluggerätemechaniker
-            p.description „Sehr ehrliche, freundliche und transparente Beratung“ -
-              span.people &nbspFamilie Gottsleben
+            .row.ref-container
+              .col-12.col-md-2.ref-image
+                    img(:src="`img/reference/jules_lamy.jpg`" alt='test')
+              p.col-12.col-md-10.pl-md-4.text-wrapper
+                span.text „Ich schätze deine Expertise“ -
+                  span.people &nbspJules Lamy, 35J, Anlagenmechaniker
+            .row.ref-container.right
+              .col-12.col-md-2.ref-image
+                    img(:src="`img/reference/jens_wihsinger.jpg`" alt='test')
+              p.col-12.col-md-10.pl-md-4.text-wrapper
+                span.text „Top Betreuer, Pech für den, der ihn nicht hat“ -
+                  span.people &nbspJens Wihsinger, 46J, leitender Vertriebsmitarbeiter
+            .row.ref-container
+              .col-12.col-md-2.ref-image
+                    img(:src="`img/reference/florian_danger.jpg`" alt='test')
+              p.col-12.col-md-10.pl-md-4.text-wrapper
+                span.text „Schon unser Erstgespräch war total klasse und hat mir die Augen geöffnet“ -
+                  span.people &nbspFlorian Danger, 22J Fluggerätemechaniker
+            .row.ref-container.right
+              .col-12.col-md-2.ref-image
+                    img(:src="`img/reference/gottsleben.jpg`" alt='test')
+              p.col-12.col-md-10.pl-md-4.text-wrapper
+                span.text „Sehr ehrliche, freundliche und transparente Beratung“ -
+                  span.people &nbspFamilie Gottsleben
+          pbtn.mt-3.mr-auto.ml-auto(to="/references" text="Zu den Referenzen")
 
   div.position-relative
     jumbotron(:showImage="true" bgImage="segelboot.jpg" heightClass="height-modification")
@@ -100,7 +117,7 @@ div
           img.custom-jumbrotron-5-img(src="img/axel-beta.jpg")
           h1.mt-5 Axel Beta
           p
-          | Auch ich hatte keine finanzielle Bildung in der Schule, habe mir durch diverse Nebenjobs Geld hinzuverdient und musste zeitweise mit sehr wenig Geld auskommen. Frustriert davon entschied ich mich, diesen Zustand zu ändern und mir das fehlende Finanzwissen anzueignen. Heute lebe ich seit 23 Jahren nach einem Finanzkompass.
-          | Plötzliche  Autoreparaturen oder andere Notfälle werfen mich nicht aus der Bahn. Ich kann entspannt Urlaub machen, meine Freizeit aktiv gestalten und auch große Projekte umsetzen.
+            | Auch ich hatte keine finanzielle Bildung in der Schule, habe mir durch diverse Nebenjobs Geld hinzuverdient und musste zeitweise mit sehr wenig Geld auskommen. Frustriert davon entschied ich mich, diesen Zustand zu ändern und mir das fehlende Finanzwissen anzueignen. Heute lebe ich seit 23 Jahren nach einem Finanzkompass.
+            | Plötzliche  Autoreparaturen oder andere Notfälle werfen mich nicht aus der Bahn. Ich kann entspannt Urlaub machen, meine Freizeit aktiv gestalten und auch große Projekte umsetzen.
 
           pbtn.mt-5.mr-auto.ml-auto(to="appointment" text="Jetzt gratis starten")
