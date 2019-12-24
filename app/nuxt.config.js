@@ -60,7 +60,12 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
+    '@bazzite/nuxt-optimized-images'
   ],
+
+  optimizedImages: {
+    optimizeImages: true
+  },
   /*
   ** Build configuration
   */

@@ -11,9 +11,8 @@ COPY ./app/. /app/
 COPY ./scripts/deploy.sh /scripts/deploy.sh
 
 # install nuxt to generate static content
-RUN npm install -g nuxt
+RUN npm install -g nuxt \
     && npm run --prefix /app/ generate
 
-RUN --mount=type=secret,id=sshkey,dst=/tmp/sshkey.pem
-    && chmod 400 /tmp/sshkey.pem
-    && scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /tmp/ssh.key.pem -r /app/dist/* bitnami@18.184.46.63:/home/bitnami/stack/nginx/html/
+RUN --mount=type=secret,id=sshkey,dst=/tmp/sshkey.pem \
+    scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i /tmp/sshkey.pem -r /app/dist/* $LIGHTSAIL_USER@$LIGHTSAIL_HOST:/home/$LIGHTSAIL_USER/stack/nginx/html/
