@@ -1,35 +1,39 @@
 <template src="./Footer.pug" lang="pug"></template>
 
 <script>
-    import PrimaryButton from "../controls/button/PrimaryButton.vue";
+  import PrimaryButton from "../controls/button/PrimaryButton.vue";
 
-    export default {
-        data() {
-            return {
-                navItems: [
-                    {
-                        title: 'Startseite',
-                        url: '/'
-                    },
-                    {
-                        title: 'Referenzen',
-                        url: 'references'
-                    },
-                    {
-                        title: 'Terminvereinbarung',
-                        url: 'appointment'
-                    },
-                    {
-                        title: 'Impressum',
-                        url: 'impress'
-                    }
-                ]
-            };
-        },
-        components: {
-            pbtn: PrimaryButton
-        }
+  export default {
+    data() {
+      return {
+        navItems: [
+          {
+            title: 'Startseite',
+            url: '/'
+          },
+          {
+            title: 'Referenzen',
+            url: 'references'
+          },
+          {
+            title: 'Terminvereinbarung',
+            url: 'appointment'
+          },
+          {
+            title: 'Impressum',
+            url: 'impress'
+          },
+          {
+            title: 'Datenschutzerklärung',
+            url: 'privacystatement'
+          }
+        ]
+      };
+    },
+    components: {
+      pbtn: PrimaryButton
     }
+  }
 </script>
 
 <style scoped>

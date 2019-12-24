@@ -11,7 +11,7 @@
 
   export default {
     head() {
-      return {};
+      return {title: "Finanzen richtig einfach"};
     },
     components: {
       Jumbotron,
@@ -83,6 +83,10 @@
     flex-direction: row-reverse;
   }
 
+  .right p {
+    justify-content: flex-end;
+  }
+
   .ref-container {
     margin: 20px 0;
   }
@@ -151,7 +155,13 @@
     }
 
     .custom-jumbrotron-6 p .text {
+      color: black !important;
+      font-size: 1.2rem;
       text-align: left;
+    }
+
+    .custom-jumbrotron-6 .right .text {
+      text-align: right;
     }
   }
 

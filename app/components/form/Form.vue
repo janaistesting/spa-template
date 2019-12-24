@@ -76,4 +76,8 @@
   .form-container a {
     max-width: 800px;
   }
+
+  .agb {
+    font-size: 0.8rem;
+  }
 </style>
