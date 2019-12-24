@@ -1,0 +1,19 @@
+{
+  "name": "Finanzen einfach",
+  "slogan": "Verkaufen ist easy wie noch nie",
+  "domain": "www.finanyen-einfach.de",
+  "navItems": [
+    {
+      "title": "Startseite",
+      "url:": "/"
+    },
+    {
+      "title": "Finanzkompass",
+      "url": "nav2"
+    },
+    {
+      "title": "Terminvereinbarung",
+      "url": "appointment"
+    }
+  ]
+}
