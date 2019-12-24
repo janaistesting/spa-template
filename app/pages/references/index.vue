@@ -23,7 +23,7 @@
 
   .header {
     height: 450px;
-    background-image: url("../../static/img/reference.jpg");
+    background-image: url("../../static/img/reference.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

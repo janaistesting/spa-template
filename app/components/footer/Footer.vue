@@ -70,4 +70,8 @@
   .footer-logo {
     text-transform: uppercase;
   }
+
+  .links-container .separator {
+    color: var(--primary-color) !important;
+  }
 </style>

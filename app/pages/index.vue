@@ -117,6 +117,7 @@
     max-width: 400px;
     width: 100%;
     height: auto;
+    border: 4px var(--primary-color) solid;
   }
 
   .stepper-container {

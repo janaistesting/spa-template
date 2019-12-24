@@ -1,16 +1,16 @@
 <template src="./Reference.pug" lang="pug"></template>
 
 <script>
-    export default {
-        props: ['image', 'name', 'profession', 'text', 'id']
-    }
+  export default {
+    props: ['image', 'name', 'profession', 'text', 'id']
+  }
 </script>
 
 <style scoped>
 
   .ref-background {
     height: 125px;
-    background-image: url("../../static/img/backgrounds/water2.jpg");
+    background-image: url("../../static/img/backgrounds/water.webp");
     box-shadow: 0 2px 5px 0 gray;
   }
 

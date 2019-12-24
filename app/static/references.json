@@ -1,7 +1,7 @@
 [
   {
     "id": "floriandanger",
-    "image": "florian_danger.jpg",
+    "image": "florian_danger.webp",
     "name": "Florian Danger",
     "age": 22,
     "profession": "Fluggerätemechaniker",
@@ -13,7 +13,7 @@
   {
     "id": "juleslamy",
     "age": 35,
-    "image": "jules_lamy.jpg",
+    "image": "jules_lamy.webp",
     "slogan": "„Ich schätze deine Expertise“",
     "name": "Jules Lamy",
     "profession": "Anlagenmechaniker",
@@ -25,7 +25,7 @@
     "id": "nicolelorenzmattke",
     "age": 0,
     "slogan": "„Wir sind froh, dass wir ihn haben“",
-    "image": "nicolelorenz_mattke.jpg",
+    "image": "nicolelorenz_mattke.webp",
     "name": "Nicole und Lorenz Mattke",
     "longtext": "Nicole hat Axel 2002 durch ein befreundetes Paar kennengelernt und mit derZusammenarbeit begonnen. Als ich 2007 Nicole kennenlernte, wurde ich mit in dieBetreuung übernommen. Zu Beginn war ich schon sehr skeptisch, denn Bekannte von mirwaren seinerzeit ebenfalls in der Branche und man hört ja nicht immer Gutes. Dochglücklicher Weise wurde ich eines besseren belehrt. Nicole und ich haben in derZwischenzeit geheiratet, 2 Kinder bekommen, ein Haus gekauft und noch einiges mehr. Axelhat uns durch diese Zeit begleitet und sich immer super um uns gekümmert. Ob es um dasThema Rente, Absicherung der Familie, Absicherung der Arbeitskraft, allgemeineVersicherungen oder die Hausfinanzierung ging. Wir sind froh, dass wir ihn haben, denn erhat uns durch seine serviceorientierte Einstellung, u.a. beim Papierkram, viel Zeit gespart.Diese haben wir dann lieber mit unseren Kindern oder anderen Projekten verbracht ;-) Außerdem hat uns Axel durch seine Fachkenntnisse ordentlich Geld eingespart.",
     "profession": "Einzelhandelskauffrau & Außenhandelkaufmann",
@@ -35,7 +35,7 @@
   {
     "id": "jenswihsinger",
     "age": 46,
-    "image": "jens_wihsinger.jpg",
+    "image": "jens_wihsinger.webp",
     "name": "Jens Wihsinger",
     "profession": "Leitender Vetriebsmitarbeiter",
     "text": "„Bei Terminsachen hat Axel eine top Wiedervorlage“",
@@ -46,7 +46,7 @@
   {
     "id": "gottsleben",
     "age": 0,
-    "image": "gottsleben.jpg",
+    "image": "gottsleben.webp",
     "name": "Familie Gottsleben",
     "profession": "Leitender Angestellter, selbständige Frisörin und Event-Gastronomin, Student",
     "text": "„Sehr freundliche, ehrliche und transparente Beratung - Bereits die ersten Gespräche waren sehr freundlich und offen“",
