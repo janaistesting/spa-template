@@ -17,3 +17,4 @@ echo Hello
 
 #For gitbash
 #scp -i $sshkey -r ../dist/ $user@$remote:/home/bitnami/stack/nginx/html/
+
